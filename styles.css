@@ -1,3 +1,30 @@
+@font-face {
+    font-family: "Norse";
+    src: url('fonts/Norse-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     display: flex;
+}
+
+#logo-section {
+    background-image: url(assets/leaf-background.avif);
+}
+
+.img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+#odin-section {
+    display: flex;
+    align-items: center;
+    font-family: 'Norse';
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    
 }
