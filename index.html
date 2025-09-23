@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 </head>
 <body>
-    <div id="logo-section">
+    <div id="left-container">
+        <img id="bg-img" src="assets/leaf-background.avif" alt="">
         <div id="odin-section">
             <img src="assets/odin-logo.png" alt="">
-            Odin
+            <h1>Odin</h1>
         </div>
+        <p id="unsplash-ref">
+            Photo by 
+            <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> 
+            on 
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a>
+        </p>
     </div>
-    <div id="body-section">
+    <div id="body-container">
         <div id="intro-section">
         <p>
         This is not a real online service! You know you need something 
@@ -29,23 +36,35 @@
             <div id="form-section">
                 <h3 id="form-title">Let's do this!</h2>
                 
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
 
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                    </div>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
 
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
             </div>
             <div id="sign-up-section">
                 <button type="submit">Create Account</button>
