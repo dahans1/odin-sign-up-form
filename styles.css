@@ -5,10 +5,15 @@
     font-style: normal;
     font-display: swap;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --left-container-width: 35vw;
 }
 
 body {
@@ -18,9 +23,15 @@ body {
 }
 
 #left-container {
-    max-width: 35vw;
+    width: var(--left-container-width);
     height: 100%;
     position: relative;
+}
+
+#right-container {
+    width: calc(100% - var(--left-container-width));
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 97%);
 }
 
 #bg-img {
@@ -63,6 +74,20 @@ body {
     color: white;
 }
 
+#intro-section {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 4em 1em 0.5em;
+}
+
+#intro-section p:last-child {
+    margin-block: 1.5rem 2rem;
+}
+
 .form-group > label {
     text-transform: uppercase;
+}
+
+#form-section {
+    background-color: white;
 }
