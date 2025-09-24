@@ -31,38 +31,57 @@
             <p>You <em>know</em> you want to.</p>
         </section>
         <form action="" method="post">
-            <section id="form-section">
-                <h2 id="form-title">Let's do this!</h2>
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
+            <div id="form-container">
+                <span id="form-title">Let's do this!</span>
+                <fieldset id="form-section">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
-                </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number">
-                </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            name="phone-number" 
+                            id="phone-number"
+                            pattern="\+?[0-9\s\-\(\)]{7,20}"
+                        >
+                    </div>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
 
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                </div>
-            </section>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input 
+                            type="password" 
+                            name="confirm-password" 
+                            id="confirm-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+                </fieldset>
+            </div>
             <section id="sign-up-section">
                 <button class="btn" type="submit">Create Account</button>
                 <div id="login">Already have an account? <a href="">Log in</a></div>
