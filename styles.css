@@ -138,6 +138,11 @@ input:invalid {
     border-color: red;
 }
 
+#sign-up-section {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
 .btn {
     background-color: var(--leaf-green-color);
     color: white;
